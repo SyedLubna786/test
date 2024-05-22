@@ -1,9 +1,19 @@
 #!/bin/bash
-echo enter the file to be search
+#echo enter the file to be search
+#read file
+#if [ -f "$file" ]
+#then
+#echo $file exists
+#else
+#echo $file does not exists
+#fi
+
+echo enter the file to remove
 read file
 if [ -f "$file" ]
 then
-echo $file exists
+rm $file
+echo $file removed
 else
-echo $file does not exists
+echo $file not removed
 fi
